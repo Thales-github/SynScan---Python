@@ -34,17 +34,22 @@ Essas respostas são essenciais para interpretar o estado de uma porta durante u
 ### 1️⃣ Instalar o Scapy
 
 1. **Certifique-se de ter o Python e o pip instalados**  
-   - O Scapy é uma biblioteca Python, então é necessário ter o Python instalado no sistema.
-    ```bash
-        pip install scapy
-    ```
-        
-   - O pip (gerenciador de pacotes do Python) geralmente já vem junto com a instalação do Python.  
+    - O pip (gerenciador de pacotes do Python) geralmente já vem junto com a instalação do Python.  
    - Para verificar se o pip está disponível, execute no terminal:
     ```bash
       pip --version
     ```
+   
+   - O Scapy é uma biblioteca Python, então é necessário a instalação da lib.
+    ```bash
+        pip install scapy
+    ```
+    
+    - Dentro da pasta do projeto, execute o script python para iniciar o reconhecimento da rede
+    ```bash
+        python .\synscan.py
+    ```
 
-1. **Caso você utilize o S.O Windows**  
+2. **Caso você utilize o S.O Windows**  
     1) baixar Npcap, para pacotes brutos no windows: https://npcap.com/#download
     2) Na instalação do Npcap, marcar o flag de modo de compatibilidade caso esteja desmarcado para evitar erros de permissão: "Install Npcap in WinPcap API-compatible Mode"
